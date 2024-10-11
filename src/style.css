@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    background-image: url(./img/imagem-fundo-opcao-3.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 90vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #030303;
+    border: 2px solid #AF43E6;
+    color: #AF43E6;
+    width: 500px;
+    height: 320px;
+}
+
+@media(max-width:800px) {
+    .container {
+        height: 512px;
+        background-color: #000000;
+    }
+}
+
+@media(max-width: 600px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #030303;
+        border: 2px solid #AF43E6;
+        color: #AF43E6;
+        width: 400px;
+        height: 350px;
+    }
+    #namehero, #xp {
+        height: 100px;
+        width: 150px;
+    }
+
+    .container {
+        height: 512px;
+        background-color: #000000;
+    }
+
+}
+
+@media(max-width: 400px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #030303;
+        border: 2px solid #AF43E6;
+        color: #AF43E6;
+        width: 300px;
+        height: 350px;
+    }
+
+    #namehero, #xp {
+        height: 100px;
+        width: 150px;
+    }
+
+}
+
+h1{
+    margin-top: 20px;
+    text-wrap: wrap;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.title {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #f5f5f5;
+}
+
+#namehero, #xp {
+    margin-top: 10px;
+    height: 50px;
+    width: 250px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #AF43E6;
+    background-color: #030303;
+    color: #f5f5f5;
+}
+
+input:focus {
+    outline-color: #AF43E6;
+}
+
+
+button {
+    margin-top: 30px;
+    height: 80px;
+    width: 150px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    background-color: #AF43E6;
+    border: 1px solid #AF43E6;
+    font-weight: bold;
+    color: #f5f5f5;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #bc4af5;
+}
+
