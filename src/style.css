@@ -43,7 +43,7 @@ form{
         width: 400px;
         height: 350px;
     }
-    #namehero, #xp {
+    #nameHero, #xp {
         height: 100px;
         width: 150px;
     }
@@ -67,7 +67,7 @@ form{
         height: 350px;
     }
 
-    #namehero, #xp {
+    #nameHero, #xp {
         height: 100px;
         width: 150px;
     }
@@ -87,7 +87,7 @@ h1{
     color: #f5f5f5;
 }
 
-#namehero, #xp {
+#nameHero, #xp {
     margin-top: 10px;
     height: 50px;
     width: 250px;
@@ -120,3 +120,26 @@ button:hover{
     background-color: #bc4af5;
 }
 
+dialog {
+    padding: 0;
+    border: 2px solid #AF43E6;
+}
+
+.modal {
+    padding: 0;
+    background-color: transparent;
+    width: 500px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color:#AF43E6;
+    border: 2px solid #e65b43;
+    border-radius: 4px;
+}

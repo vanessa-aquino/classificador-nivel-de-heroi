@@ -7,13 +7,22 @@
     <link rel="stylesheet" href="./src/style.css"> 
 </head>
 <body class="container">
-    <form class="flex">
+    <form class="flex" id="heroForm">
         <h1>Consulte o seu Nível de Herói</h1>
-        <label for="namehero" class="title">Seu nome de herói:</label>
-        <input type="text" placeholder="Digita aqui o nome do seu herói" required id="namehero">
+        <label for="nameHero" class="title">Seu nome de herói:</label>
+        <input type="text" placeholder="Digita aqui o nome do seu herói" id="nameHero" required>
         <label for="xp" class="title">Sua quantidade de XP:</label>
-        <input type="number" placeholder="Digite aqui a quantidade do seu XP" required id="xp">
-        <button type="submit">VERIFIQUE SEU ELO</button>
+        <input type="number" placeholder="Digite aqui a quantidade do seu XP" id="xp" required>
+        <button type="submit" id="openModal">VERIFIQUE SEU ELO</button>
+
+        <!-- Modal -->
+        <dialog id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="modalResult">Resultado do Elo Aqui</p>
+            </div>
+        </dialog>
     </form>
+    <script defer src="./scripts/script.js"></script>
 </body>
 </html>
