@@ -5,30 +5,30 @@ document.getElementById('heroForm').onsubmit = function(event) {
     const heroName = document.getElementById('nameHero').value;
     const heroXP = parseInt(document.getElementById('xp').value);
 
-    // Inicializa a variável nivel
-    let nivel;
-
+    // Inicializa a variável level
+    let level;
+    
     // Classifica o nível do herói
     if (heroXP < 1000) {
-        nivel = 'Ferro';
+        level = 'Ferro';
     } else if (heroXP >= 1001 && heroXP <= 2000) {
-        nivel = 'Bronze';
+        level = 'Bronze';
     } else if (heroXP >= 2001 && heroXP <= 5000) {
-        nivel = 'Prata';
+        level = 'Prata';
     } else if (heroXP >= 5001 && heroXP <= 7000) {
-        nivel = 'Ouro';
+        level = 'Ouro';
     } else if (heroXP >= 7001 && heroXP <= 8000) {
-        nivel = 'Platina';
+        level = 'Platina';
     } else if (heroXP >= 8001 && heroXP <= 9000) {
-        nivel = 'Ascendente';
+        level = 'Ascendente';
     } else if (heroXP >= 9001 && heroXP <= 10000) {
-        nivel = 'Imortal';
+        level = 'Imortal';
     } else {
-        nivel = 'Radiante';
+        level = 'Radiante';
     }
 
     // Atualiza o texto no modal
-    document.getElementById('modalResult').innerText = `O herói de nome ${heroName} está no nível de ${nivel}.`;
+    document.getElementById('modalResult').innerText = `Parabéns, o herói de nome ${heroName} está no nível: ${level}!`;
 
     // Abre o modal
     const modal = document.getElementById('myModal');

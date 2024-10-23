@@ -7,7 +7,7 @@ body {
     display: flex;
     margin-top: 50px;
     justify-content: center;
-    background-image: url(./img/imagem-fundo-opcao-3.jpg);
+    background-image: url(./imagem-fundo-opcao-3.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -23,6 +23,7 @@ form{
     color: #AF43E6;
     width: 500px;
     height: 320px;
+    border-radius: 5px;
 }
 
 @media(max-width:800px) {
@@ -102,7 +103,6 @@ input:focus {
     outline-color: #AF43E6;
 }
 
-
 button {
     margin-top: 30px;
     height: 80px;
@@ -120,26 +120,29 @@ button:hover{
     background-color: #bc4af5;
 }
 
-dialog {
+dialog{
     padding: 0;
-    border: 2px solid #AF43E6;
+    width: 100%;
+    height: 6.1rem;
+    margin-left: clamp(1.5rem, 0.692rem + 1.231vw, 1.8rem);
+    text-align: center;
+    background-color: #030303;
+    color: #AF43E6;
+    border-radius: 5px;
+    font-size: clamp(1.5rem, 0.615rem + 1.538vw, 3rem);
+    cursor: pointer;
+    margin-top: 2rem;
 }
 
-.modal {
-    padding: 0;
-    background-color: transparent;
-    width: 500px;
-    height: 100px;
-    margin-top: 100px;
-    margin-left: 100px;
+
+dialog::backdrop{
+    background-color: #000000b0;
 }
 
 .modal-content {
+    border: #AF43E6;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    color:#AF43E6;
-    border: 2px solid #e65b43;
-    border-radius: 4px;
 }
+
+
