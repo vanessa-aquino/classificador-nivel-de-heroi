@@ -9,7 +9,7 @@ Este projeto é um classificador de nível de herói que utiliza os pontos de ex
 - HTML para a estrutura da página.
 - Visual Studio Code como editor de código.
 ## 🕵️‍♀️ Funcionalidades
-
+- Link para acesso: https://vanessa-aquino.github.io/classificador-nivel-de-heroi/
 - O jogador insere seu nível de XP.
 - O sistema calcula o elo do jogador de acordo com a tabela de níveis.
 - A classificação é exibida dinamicamente na tela.
